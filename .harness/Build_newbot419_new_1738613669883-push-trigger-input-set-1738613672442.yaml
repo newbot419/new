@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_newbot419_new_1738613669883-push-trigger-input-set
+  identifier: Build_newbot419_new_1738613669883pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: king
+  pipeline:
+    identifier: Build_newbot419_new_1738613669883
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
