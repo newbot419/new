@@ -1,0 +1,8 @@
+environment:
+  name: king
+  identifier: king
+  description: ""
+  tags: {}
+  type: Production
+  orgIdentifier: default
+  projectIdentifier: default_project
